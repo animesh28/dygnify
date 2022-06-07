@@ -1,0 +1,64 @@
+.textField_label { 
+    color: white !important;
+  } 
+
+body {
+    background: url('./bg.jpg');
+    backdrop-filter: brightness(10%);
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 18px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: brightness(10%);
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 5vh;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px) brightness(30%);
+    margin: -20px;
+  }
+
+  .MuiStepLabel-label {
+      color: #fff !important;
+      font-weight: 300;
+
+  }
+
+  .MuiFormHelperText-root {
+      font-size: .9rem !important;
+  }
+
+  .MuiFilledInput-input {
+      color: #fff !important;
+  }
+
+  input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #000 inset !important;
+    -webkit-text-fill-color: white !important;
+}
